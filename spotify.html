@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://img.icons8.com/?size=1000id=G9XXzb9XaEKX&format=png" type="image/icon type">
+    <title>Spotify- Web Player: Music for everyone</title>
+    <script src="https://code.iconify.design/iconify-icon/2.1.0/iconify-icon.min.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin:0px;
+    padding:0px;
+}
+
+body{
+    width:100%;
+    height:100%;
+    
+    color:rgba(255, 255, 255, 1);
+    background-color: #000000;
+    font-weight: 500;
+
+}
+.container{
+    display: grid;
+    height: 100%;
+    grid-template-columns: 30% 1fr;
+    grid-template-rows:70px 505px 50px;
+    
+    
+}
+.container >div{
+    
+  margin:5px;
+  width:auto;
+  height: auto;
+  border-radius: 5px;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+ 
+
+}
+.d1{
+    position:sticky;
+    grid-area: 1/1/2/-1;
+    background-color:black;
+}
+#logo{
+    position: absolute;
+    top:20%;
+    left:2%;
+    height: 35px;
+    width:35px;
+}
+#search::placeholder{
+        font-size: medium;
+        color: #757474;
+        padding-left: 9%;
+}
+span:hover{
+    filter: brightness(500%);
+}
+.d2{
+    grid-area:2/1/3/2;
+    background-color: #121212;
+}
+.d3{
+    position: relative;
+    background-color:#121212; 
+    overflow: scroll; 
+    -ms-overflow-style: none;  
+    scrollbar-width: none;     
+}
+body{
+    overflow: hidden; 
+    -ms-overflow-style: none;  
+    scrollbar-width: none;  
+}
+div>div>div>div:hover{
+   transform: scale(1.05);
+}
+
+td{
+    font-size:large;
+   
+    width:175px;
+    height: 25px;
+}
+.heade{
+    font-weight: bolder;
+}
+.d4{
+    grid-area:3/1/4/-1;
+    background-color:#000000;
+}
+    </style>
+    <title>Spotify</title>
+</head>
+<body>
+    <div class="container">
+        <div class="d1">
+                <img id="logo"src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxZW0iIGhlaWdodD0iMWVtIiB2aWV3Qm94PSIwIDAgMTYgMTYiPjxwYXRoIGZpbGw9IndoaXRlIiBkPSJNOCAwYTggOCAwIDEgMCAwIDE2QTggOCAwIDAgMCA4IDBtMy42NjkgMTEuNTM4YS41LjUgMCAwIDEtLjY4Ni4xNjVjLTEuODc5LTEuMTQ3LTQuMjQzLTEuNDA3LTcuMDI4LS43N2EuNDk5LjQ5OSAwIDAgMS0uMjIyLS45NzNjMy4wNDgtLjY5NiA1LjY2Mi0uMzk3IDcuNzcuODkyYS41LjUgMCAwIDEgLjE2Ni42ODZtLjk3OS0yLjE3OGEuNjI0LjYyNCAwIDAgMS0uODU4LjIwNWMtMi4xNS0xLjMyMS01LjQyOC0xLjcwNC03Ljk3Mi0uOTMyYS42MjUuNjI1IDAgMCAxLS4zNjItMS4xOTRjMi45MDUtLjg4MSA2LjUxNy0uNDU0IDguOTg2IDEuMDYzYS42MjQuNjI0IDAgMCAxIC4yMDYuODU4bS4wODQtMi4yNjhDMTAuMTU0IDUuNTYgNS45IDUuNDE5IDMuNDM4IDYuMTY2YS43NDguNzQ4IDAgMSAxLS40MzQtMS40MzJjMi44MjUtLjg1NyA3LjUyMy0uNjkyIDEwLjQ5MiAxLjA3YS43NDcuNzQ3IDAgMSAxLS43NjQgMS4yODgiLz48L3N2Zz4=">   
+                <diV style="display: flex;flex-wrap:nowrap;gap: 5px;margin-top:-0.5%;width: 70%;position: relative;left:29%">
+                    <button style=" width:45px;height:45px;border-radius: 50%;background-color:#2a2a2a;border-style: none;"><iconify-icon icon="material-symbols-light:home" width="2.5em" height="2.5em"  style="color: #f8f8f8"></iconify-icon></button>
+                    <input id="search" type="search" placeholder="What do you wnat to play?" style="border-style:none;background-color:#2a2a2a;border-radius: 24px;width:500px;height:40px">
+                    <iconify-icon icon="ion:search" width="0.8em" height="0.8em"  style="color: #bdbdbd;position: absolute;top:15%;left:6.5%"></iconify-icon>
+                    <iconify-icon icon="pepicons-pop:line-y" width="1em" height="0.8em"  style="color: #bdbdbd85;position: absolute;top:15%;left:50.5%"></iconify-icon>
+                    <iconify-icon icon="gg:stack" width="1em" height="0.7em"  style="color: #bdbdbd;position: absolute;top:15%;left:53.5%"></iconify-icon>
+                    <button style=" width:150px;height:30px;border-radius: 24px;font-weight: 600;border-style: none;background-color: #f8f8f8;margin-top:0.5%;">Explore Premium</button>
+                    <button style=" width:120px;height:35px;border-radius: 24px;padding-bottom: 10px;margin-top:0.5%;margin-left:3%;padding-top: 0.5%;align-content: center;font-size: small;color: #f8f8f8;font-weight: 800;background-color: #000000;border-style: none;"><iconify-icon icon="material-symbols:download-for-offline-outline" width="1.5em" height="1.5em"  style="color: #ebd9d9;position:absolute;left:77.5%;top:10%;margin-top:0.5%;"></iconify-icon>Install App</button>
+                    <button style=" margin-top:0.5%;height:35px;border-radius: 50%;background-color: #000000;border-style: none;"><iconify-icon icon="mdi:bell-outline" width="1.5em" height="1.5em"  style="color: #bdbdbd;font-weight: 800;" ></iconify-icon></button>
+                    <button style=" width:50px;height:50px;border-radius: 50%;background-color: #000000; border-style: none;margin-left: 1%;margin-top:0.5%;"><img src="https://th.bing.com/th/id/OIP.YsTLl8SPezM-E52XOSRwBAHaHa?rs=1&pid=ImgDetMain" style=" width:40px;height:40px;border-radius: 50%;position: absolute;top: -2%;left:95%"> </button>
+                </diV>
+            </diV>
+
+        <div class="d2" style="min-width:300px;">
+            <div style="width:inherit;display:flex;flex-wrap:nowrap;">
+                <iconify-icon icon="lucide:library-big"  style="color: #bdbdbd;margin-right:5px;margin-left:20px;height:20px;"></iconify-icon>
+                <span style="font-size: medium;font-weight:800;margin-top: 2%;">Your Library</span>
+                <div style="margin-left:40%;display:flex;flex-wrap: nowrap;">
+                    <iconify-icon icon="ic:round-plus"  style="color: #bdbdbd;height:20px;width:20px;"></iconify-icon>
+                     <iconify-icon icon="maki:arrow" width="0.8em" height="0.8em"  style="color: #bdbdbd;margin-top: 3%;margin-left: 20px;"></iconify-icon>
+                </div>
+            </div>
+             <div style="margin-top:2%;position:absolute;left:2%;"> 
+                <button style="width:70px;height: 30px;border-radius:15px;background-color: #333333;color:#ebebeb;border-style: none;">Playlists</button>
+                <button style="width:60px;height: 30px;border-radius:15px;background-color: #333333;color:#ebebeb;border-style: none;">Artists</button>
+            </div>
+            <div style="margin-top:20%;position:relative;left:5%;display:flex;flex-wrap: wrap;">
+                <iconify-icon icon="weui:search-filled" width="0.8em" height="0.8em"  style="color: #bdbdbd"></iconify-icon>
+                <div style="position: absolute;right:10%;">
+                <span style="font-size: medium;position:absolute;top:15%;left:-230%;">Recents</span>
+                <iconify-icon icon="ph:list-bullets-bold" width="0.8em" height="0.8em"  style="color: #bdbdbd"></iconify-icon>
+                </div>
+            </div>
+            <div style="display:grid;position: relative;gap: 10px;">
+                <div style="margin-bottom: 5px;vposition: relative;height: 50px;">
+                    <img src="https://image-cdn-ak.spotifycdn.com/image/ab67706c0000da847f942a3e4746fb674f1b78b6" width="50px"height="50px" style="margin:5px;position: absolute;left:5%;border-radius: 5px;">
+                    <div style="display:flex;flex-direction: column;margin-top: 2%;margin-left:20%;text-align: left;padding-left: 10px;">
+                    <span style="font-size: large;color: #FFFFFF;margin-bottom: 5px;">GYM HARDSTYLE / PHONK</span>
+                    <span style="font-size: 15PX;color: #a5acb1;"> Playlist.TrapNation</span>
+                    </div>
+                </div>
+                <div style="margin-bottom: 5px;position: relative;height: 50px;">
+                    <img src="https://mosaic.scdn.co/60/ab67616d00001e0240413bdc4e7eb6b24900a238ab67616d00001e02a9a1766b83b5745e735fbdabab67616d00001e02d8358918401d89166ded258dab67616d00001e02fd13588a958fbd23d5524e1b" width="50px"height="50px" style="margin:5px;position: absolute;left:5%;border-radius: 5px;">
+                    <div style="display:flex;flex-direction: column;margin-top: 2%;margin-left:20%;text-align: left;padding-left: 10px;">
+                    <span style="font-size: large;color: #FFFFFF;margin-bottom: 5px;">Fresh</span>
+                    <span style="font-size: 15PX;color: #a5acb1;"> Playlist.258abfdiagbsajja558aahj</span>
+                    </div>
+                </div> <div style="margin-bottom: 5px;position: relative;height: 50px;">
+                    <img src="https://th.bing.com/th/id/OIP.jIR45mg2r62SKgGpaZFvKwHaEK?w=305&h=180&c=7&r=0&o=5&pid=1.7" width="50px"height="50px" style="margin:5px;position: absolute;left:5%;border-radius: 5px;">
+                    <div style="display:flex;flex-direction: column;margin-top: 2%;margin-left:20%;text-align: left;padding-left: 10px;">
+                    <span style="font-size: large;color: #FFFFFF;margin-bottom: 5px;">TRENDING NOW TAMIL</span>
+                    <span style="font-size: 15PX;color: #a5acb1;"> Playlist.trecomedia</span>
+                    </div>
+                </div>
+                <div style="margin-bottom: 5px;position: relative;height: 50px;">
+                    <img src="data:image/jpeg;base64,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" width="50px"height="50px" style="margin:5px;position: absolute;left:5%;border-radius: 50%;">
+                    <div style="display:flex;flex-direction: column;margin-top: 2%;margin-left:20%;text-align: left;padding-left: 10px;">
+                    <span style="font-size: large;color: #FFFFFF;margin-bottom: 5px;">Karthick</span>
+                    <span style="font-size: 15PX;color: #a5acb1;"> Artist</span>
+                    </div>
+                </div>
+                <div style="margin-bottom: 5px;position: relative;height: 50px;">
+                    <img src="https://th.bing.com/th/id/OIP.093i0uGDl9PC5QgljStPdAHaE7?w=256&h=180&c=7&r=0&o=5&pid=1.7" width="50px"height="50px" style="margin:5px;position: absolute;left:5%;border-radius: 50%;">
+                    <div style="display:flex;flex-direction: column;margin-top: 2%;margin-left:20%;text-align: left;padding-left: 10px;">
+                    <span style="font-size: large;color: #FFFFFF;margin-bottom: 5px;">HipHop Aadhi</span>
+                    <span style="font-size: 15PX;color: #a5acb1;"> Artist</span>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        <div class="d3" style="overflow-x:auto;">
+            <div style="text-align: left;margin-left: 2%;margin-top:-1%">
+                <button style="width: 40px;height:30px;border-radius: 24px;border-style: none;background-color: #ffffff;font-weight: 700;">All</button>
+                <button style="width: 60px;height:30px;border-radius: 24px;border-style: none;background-color: #333333;font-weight: 700;color: #f8f8f8;">Music</button>
+                <button style="width: 70px;height:30px;border-radius: 24px;border-style: none;background-color: #333333;font-weight: 700;color: #f8f8f8;">Podcasts</button>
+            </div>
+            <div style="font-weight:400;margin-top:5%;text-align: left;margin-left: 2%;;">
+                <span style="margin-bottom: 2%;font-weight: bold;">Popular Albums</span>
+                <span style="margin-bottom: 2%;font-size: medium;position: relative; left:67%;font-weight: bold;">Show all</span>
+                <div style="display: grid;grid-template-columns: 
+                1fr 1fr 1fr 1fr 1fr;grid-template-rows: 300px;gap:2%;overflow-x:hidden;margin-top: 2%;">
+                    <div >
+                        <img src="https://i.scdn.co/image/ab67616d00001e025e16168f7e8ff4fb8aace6cf" style="height:175px;width:160px;padding:5px;border-radius: 12px;">
+                        <p style="font-size:large;color: #ffffff;font-weight: 500;padding-left:5px;">Aaj Ki Raat (From "Stree 2")</p>
+                        <p style="font-size:medium;color: #bdbdbd;padding-left:5px;"> Sachin-Jigar, Amitabh Bhattacharya</p>
+                    </div>
+                    <div >
+                        <img src="https://i.scdn.co/image/ab67616d00001e026404721c1943d5069f0805f3" style="height:175px;width:160px;padding:5px;border-radius: 12px;">
+                        <p style="font-size:large;color: #ffffff;font-weight: 500;padding-left:5px;">Aashiqui 2</p>
+                        <p style="font-size:medium;color: #bdbdbd;padding-left:5px;"> Mithoon, Ankit Tiwari, Jeet Gannguli</p>
+                    </div>
+                    <div >
+                        <img src="https://i.scdn.co/image/ab67616d00001e02d5f4378b1ffc9119fdc7306d" style="height:175px;width:160px;padding:5px;border-radius: 12px;">
+                        <p style="font-size:large;color: #ffffff;font-weight: 500;padding-left:5px;">Sajni (From "Laapataa Ladies"))</p>
+                        <p style="font-size:medium;color: #bdbdbd;padding-left:5px;"> Ram Sampath, Arijit Singh, Prashant Pandey</p>
+                    </div>
+                    <div >
+                        <img src="https://i.scdn.co/image/ab67616d00001e02aad3f4b601ae8763b3fc4e88 " style="height:175px;width:160px;padding:5px;border-radius: 12px;">
+                        <p style="font-size:large;color: #ffffff;font-weight: 500;padding-left:5px;">GLORY</p>
+                        <p style="font-size:medium;color: #bdbdbd;padding-left:5px;">  Yo Yo Honey Singh </p>
+                    </div>
+                    <div >
+                        <img src="https://i.scdn.co/image/ab67616d00001e025f3ede47954a93aa03efe5f9" style="height:175px;width:160px;padding:5px;border-radius: 12px;">
+                        <p style="font-size:large;color: #ffffff;font-weight: 500;padding-left:5px;">ANIMAL</p>
+                        <p style="font-size:medium;color: #bdbdbd;padding-left:5px;"> Manan Bhardwaj, Vishal Mishra, Jaani</p>
+                    </div>
+                   
+       
+                </div>
+            </div>
+
+
+
+            <div style="font-weight:400;margin-top:2%;text-align: left;margin-left: 2%;;">
+                <span style="margin-bottom: 2%;font-weight: bold;">Popular Radio</span>
+                <span style="margin-bottom: 2%;font-size: medium;position: relative; left:70%;font-weight: bold;">Show all</span>
+                <div style="display: grid;grid-template-columns: 
+                1fr 1fr 1fr 1fr 1fr;grid-template-rows: 300px;gap:2%;overflow-x:hidden;margin-top: 2%;">
+                    <div >
+                        <img src="https://pickasso.spotifycdn.com/image/ab67c0de0000deef/dt/v1/img/radio/artist/0oOet2f43PA68X5RxKobEy/en" style="height:175px;width:160px;padding:5px;border-radius: 12px;">
+                        <p style="font-size:large;color: #ffffff;font-weight: 500;padding-left:5px;">Aaj Ki Raat (From "Stree 2")</p>
+                        <p style="font-size:medium;color: #bdbdbd;padding-left:5px;"> Sachin-Jigar, Amitabh Bhattacharya</p>
+                    </div>
+                    <div >
+                        <img src="https://pickasso.spotifycdn.com/image/ab67c0de0000deef/dt/v1/img/radio/artist/1mYsTxnqsietFxj1OgoGbG/en" style="height:175px;width:160px;padding:5px;border-radius: 12px;">
+                        <p style="font-size:large;color: #ffffff;font-weight: 500;padding-left:5px;">Aaj Ki Raat (From "Stree 2")</p>
+                        <p style="font-size:medium;color: #bdbdbd;padding-left:5px;"> Sachin-Jigar, Amitabh Bhattacharya</p>
+                    </div>
+                    <div >
+                        <img src="https://pickasso.spotifycdn.com/image/ab67c0de0000deef/dt/v1/img/radio/artist/3gBKY0y3dFFVRqicLnVZYz/en" style="height:175px;width:160px;padding:5px;border-radius: 12px;">
+                        <p style="font-size:large;color: #ffffff;font-weight: 500;padding-left:5px;">Aaj Ki Raat (From "Stree 2")</p>
+                        <p style="font-size:medium;color: #bdbdbd;padding-left:5px;"> Sachin-Jigar, Amitabh Bhattacharya</p>
+                    </div>
+                    <div >
+                        <img src="https://pickasso.spotifycdn.com/image/ab67c0de0000deef/dt/v1/img/radio/artist/4YRxDV8wJFPHPTeXepOstw/en" style="height:175px;width:160px;padding:5px;border-radius: 12px;">
+                        <p style="font-size:large;color: #ffffff;font-weight: 500;padding-left:5px;">Aaj Ki Raat (From "Stree 2")</p>
+                        <p style="font-size:medium;color: #bdbdbd;padding-left:5px;"> Sachin-Jigar, Amitabh Bhattacharya</p>
+                    </div>
+                    <div >
+                        <img src="https://pickasso.spotifycdn.com/image/ab67c0de0000deef/dt/v1/img/radio/artist/4fEkbug6kZzzJ8eYX6Kbbp/en" style="height:175px;width:160px;padding:5px;border-radius: 12px;">
+                        <p style="font-size:large;color: #ffffff;font-weight: 500;padding-left:5px;">Aaj Ki Raat (From "Stree 2")</p>
+                        <p style="font-size:medium;color: #bdbdbd;padding-left:5px;"> Sachin-Jigar, Amitabh Bhattacharya</p>
+                    </div>
+                   
+       
+                </div>
+            </div>
+
+            <div style="font-weight:400;margin-top:2%;text-align: left;margin-left: 2%;;">
+                <span style="margin-bottom: 2%;font-weight: bold;">Popular Artists</span>
+                <span style="margin-bottom: 2%;font-size: medium;position: relative; left:69%;font-weight: bold;">Show all</span>
+                <div style="display: grid;grid-template-columns: 
+                1fr 1fr 1fr 1fr 1fr;grid-template-rows: 300px;gap:2%;overflow-x:hidden;margin-top: 2%;">
+                    <div >
+                        <img src="https://i.scdn.co/image/ab676161000051745ba2d75eb08a2d672f9b69b7" style="height:175px;width:160px;padding:5px;border-radius: 50%;">
+                        <p style="font-size:large;color: #ffffff;font-weight: 500;padding-left:5px;">Arijit Singh</p>
+                        <p style="font-size:medium;color: #bdbdbd;padding-left:5px;"> Artist</p>
+                    </div>
+                    <div >
+                        <img src="https://i.scdn.co/image/ab676161000051748de0e6e7e55d7773931ab7f4" style="height:175px;width:160px;padding:5px;border-radius: 50%;">
+                        <p style="font-size:large;color: #ffffff;font-weight: 500;padding-left:5px;">Udit Narayan</p>
+                        <p style="font-size:medium;color: #bdbdbd;padding-left:5px;"> Artist</p>
+                    </div>
+                    <div >
+                        <img src="https://i.scdn.co/image/ab67616100005174fc043bea91ac91c222d235c9" style="height:175px;width:160px;padding:5px;border-radius: 50%;">
+                        <p style="font-size:large;color: #ffffff;font-weight: 500;padding-left:5px;">Diljit Dosanjh</p>
+                        <p style="font-size:medium;color: #bdbdbd;padding-left:5px;">Artist</p>
+                    </div>
+                    <div >
+                        <img src="https://i.scdn.co/image/ab67616100005174c40600e02356cc86f0debe84" style="height:175px;width:160px;padding:5px;border-radius: 50%;">
+                        <p style="font-size:large;color: #ffffff;font-weight: 500;padding-left:5px;">A.R. Rahman</p>
+                        <p style="font-size:medium;color: #bdbdbd;padding-left:5px;">Artist</p>
+                    </div>
+                    <div >
+                        <img src="https://i.scdn.co/image/ab67616100005174b19af0ea736c6228d6eb539c" style="height:175px;width:160px;padding:5px;border-radius: 50%;">
+                        <p style="font-size:large;color: #ffffff;font-weight: 500;padding-left:5px;"> Atif Aslam</p>
+                        <p style="font-size:medium;color: #bdbdbd;padding-left:5px;">Artist</p>
+                    </div>
+                   
+       
+                </div>
+            </div>
+
+            <div style="font-weight:400;margin-top:2%;text-align: left;margin-left: 2%;;">
+                <span style="margin-bottom: 2%;font-weight: bold;">Charts</span>
+                <span style="margin-bottom: 2%;font-size: medium;position: relative; left:80%;font-weight: bold;">Show all</span>
+                <div style="display: grid;grid-template-columns: 
+                1fr 1fr 1fr 1fr 1fr;grid-template-rows: 300px;gap:2%;overflow-x:hidden;margin-top: 2%;">
+                    <div >
+                        <img src="https://i.scdn.co/image/ab67706f0000000246df5d841d1d109547d7647d" style="height:175px;width:160px;padding:5px;border-radius: 12px;">
+                        <p style="font-size:large;color: #ffffff;font-weight: 500;padding-left:5px;">Aaj Ki Raat (From "Stree 2")</p>
+                        <p style="font-size:medium;color: #bdbdbd;padding-left:5px;"> Sachin-Jigar, Amitabh Bhattacharya</p>
+                    </div>
+                    <div >
+                        <img src="https://i.scdn.co/image/ab67706f0000000278c3ea7da56f79e29f208a02" style="height:175px;width:160px;padding:5px;border-radius: 12px;">
+                        <p style="font-size:large;color: #ffffff;font-weight: 500;padding-left:5px;">Aaj Ki Raat (From "Stree 2")</p>
+                        <p style="font-size:medium;color: #bdbdbd;padding-left:5px;"> Sachin-Jigar, Amitabh Bhattacharya</p>
+                    </div>
+                    <div >
+                        <img src="https://i.scdn.co/image/ab67706f00000002438c959aa31c22fd160d8e09" style="height:175px;width:160px;padding:5px;border-radius: 12px;">
+                        <p style="font-size:large;color: #ffffff;font-weight: 500;padding-left:5px;">Aaj Ki Raat (From "Stree 2")</p>
+                        <p style="font-size:medium;color: #bdbdbd;padding-left:5px;"> Sachin-Jigar, Amitabh Bhattacharya</p>
+                    </div>
+                    <div >
+                        <img src="https://i.scdn.co/image/ab67706f00000002000259b646f7d7f10fe99709" style="height:175px;width:160px;padding:5px;border-radius: 12px;">
+                        <p style="font-size:large;color: #ffffff;font-weight: 500;padding-left:5px;">Aaj Ki Raat (From "Stree 2")</p>
+                        <p style="font-size:medium;color: #bdbdbd;padding-left:5px;"> Sachin-Jigar, Amitabh Bhattacharya</p>
+                    </div>
+                    <div >
+                        <img src="https://i.scdn.co/image/ab67706f00000002d53aed24fb97e8f98e25e31c" style="height:175px;width:160px;padding:5px;border-radius: 12px;">
+                        <p style="font-size:large;color: #ffffff;font-weight: 500;padding-left:5px;">Aaj Ki Raat (From "Stree 2")</p>
+                        <p style="font-size:medium;color: #bdbdbd;padding-left:5px;"> Sachin-Jigar, Amitabh Bhattacharya</p>
+                    </div>
+                   
+       
+                </div>
+            </div>
+
+            <div style="font-weight:400;margin-top:2%;text-align: left;margin-left: 2%;;">
+                <span style="margin-bottom: 2%;font-weight: bold;">India's Best</span>
+                <span style="margin-bottom: 2%;font-size: medium;position: relative; left:73%;font-weight: bold;">Show all</span>
+                <div style="display: grid;grid-template-columns: 
+                1fr 1fr 1fr 1fr 1fr;grid-template-rows: 300px;gap:2%;overflow-x:hidden;margin-top: 2%;">
+                    <div >
+                        <img src="https://i.scdn.co/image/ab67706f0000000248f58a6c16c24b9e3888fdf1" style="height:175px;width:160px;padding:5px;border-radius: 12px;">
+                        <p style="font-size:medium;color: #bdbdbd;padding-left:5px;"> Hottest tracks from your favourite I-Pop...</p>
+                    </div>
+                    <div >
+                        <img src="https://i.scdn.co/image/ab67706f0000000215d9c9d2dde2b9d12ba9c41c" style="height:175px;width:160px;padding:5px;border-radius: 12px;">
+                       <p style="font-size:medium;color: #bdbdbd;padding-left:5px;">  Playlist Bollywood Central, jab baje toh seedha dil k...</p>
+                    </div>
+                    <div >
+                        <img src="https://i.scdn.co/image/ab67706f000000021d9eb6637c00b3b85e64544b" style="height:175px;width:160px;padding:5px;border-radius: 12px;">
+                        <p style="font-size:medium;color: #bdbdbd;padding-left:5px;"> Ultimate 101 Punjabi Hits with Navaan Sandhu...</p>
+                    </div>
+                    <div >
+                        <img src="https://i.scdn.co/image/ab67706f00000002dda381d6e4b5ebc246bada8a" style="height:175px;width:160px;padding:5px;border-radius: 12px;">
+                       <p style="font-size:medium;color: #bdbdbd;padding-left:5px;"> The finest set of Telugu music from the past 10 ...</p>
+                    </div>
+                    <div >
+                        <img src="https://i.scdn.co/image/ab67706f000000021ca2911a6dd95e49bee08d40" style="height:175px;width:160px;padding:5px;border-radius: 12px;">
+                        <p style="font-size:medium;color: #bdbdbd;padding-left:5px;">Playlist India's Rap Scene. Cover- Hanumankind</p>
+                    </div>
+                   
+       
+                </div>
+            </div>  
+
+            <div  style="margin-left: 3%;margin-top:5%;">
+                <table style="text-align: left;" >
+                    <tr class="heade">
+                        <td>Company</td>
+                        <td>Communities</td>
+                        <td>Useful links</td>
+                        <td>Spotify Plans</td>
+                        <td>
+                            <button style="border-style: none;width: 40px;height: 40px;text-align: center;border-radius: 50%;background-color: #333333;margin-left:10px;"><iconify-icon icon="mdi:instagram" width="1.8em" height="1.8em"  style="color: white"></iconify-icon></button>
+                            <button style="border-style: none;width: 40px;height: 40px;text-align: center;border-radius: 50%;background-color: #333333;margin-left:10px;"><iconify-icon icon="mdi:twitter" width="1.7rem" height="1.7rem"  style="color: white"></iconify-icon></button>
+                            <button style="border-style: none;width: 40px;height: 40px;text-align: center;border-radius: 50%;background-color: #333333;margin-left:10px;"><iconify-icon icon="ic:baseline-facebook" width="1.7rem" height="1.7rem"  style="color: white"></iconify-icon></button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>About</td>
+                        <td>For Artists</td>
+                        <td>Support</td>
+                        <td>Premium Individual</td>
+                    </tr>
+                    <tr>
+                        <td>Jobs</td>
+                        <td>Developers</td>
+                        <td>Free Mobile App</td>
+                        <td>Premium Duo</td>
+                    </tr>
+                    <tr>
+                        <td>For the Record</td>
+                        <td>Advertising</td>
+                        <td></td>
+                        <td>Premium Family</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Investors</td>
+                        <td></td>
+                        <td>Premium Student</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Vendors</td>
+                        <td></td>
+                        <td>Spotify Free</td>
+                    </tr>   
+                </table>
+            </div>
+        </div>
+        <div class="d4">
+           <div> 
+            <iconify-icon icon="ph:shuffle-bold" width="1.3rem" height="1.3rem"  style="color: rgba(255, 255, 255, 0.596);margin-left:5px;"></iconify-icon>
+            <iconify-icon icon="fa6-solid:backward-step" width="1.3rem" height="1.3rem"  style="color: rgba(255, 255, 255, 0.583);margin-left:5px;"></iconify-icon>
+            <iconify-icon icon="gridicons:pause" width="1.3rem" height="1.3rem"  style="color: rgba(255, 255, 255, 0.576);margin-left:5px;"></iconify-icon>
+            <iconify-icon icon="ri:skip-forward-fill" width="1.3rem" height="1.3rem"  style="color: #ffffff95;margin-left:5px;"></iconify-icon>
+            <iconify-icon icon="iconoir:repeat" width="1.3rem" height="1.3rem"  style="color: rgba(255, 255, 255, 0.582);margin-left:5px;"></iconify-icon>
+        </div>
+        
+           <hr style="width:400px;height:4px;background-color: #333333;border-style: none;margin-left: 35%;">
+        
+        <div style="position: absolute;left:85%;width:150px;top:92%">
+            <iconify-icon icon="icomoon-free:file-play" width="1.3rem" height="1.3rem"  style="color: rgba(255, 255, 255, 0.59);margin-left:5px;"></iconify-icon>
+            <iconify-icon icon="ic:twotone-library-music" width="1.3rem" height="1.3rem"  style="color: rgba(255, 255, 255, 0.556);margin-left:5px;"></iconify-icon>
+            <iconify-icon icon="mingcute:volume-fill" width="1.3rem" height="1.3rem"  style="color: rgba(255, 255, 255, 0.579);margin-left:5px;"></iconify-icon>
+            <iconify-icon icon="lets-icons:user-box" width="1.3rem" height="1.3rem"  style="color: rgba(255, 255, 255, 0.586);margin-left:5px;"></iconify-icon>
+        </div>
+           
+
+
+        </div>
+    </div>
+</body>
+</html>
